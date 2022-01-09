@@ -16,9 +16,10 @@ public class ProdutoController {
 	@Autowired
 	ProdutoRepository produtoRepository;
 
-	@PostMapping("/produtos")
+	@PostMapping("/produto")
 	public Produto novoProduto(@RequestBody Produto produto) {
 		return produtoRepository.save(produto);
-		
 	}
+	
+	
 }
